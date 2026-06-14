@@ -50,11 +50,10 @@ class Solution:
 
     def largestElement(self,nums):
         largest = nums[0]
-        n = len(nums-1)
-        for i in range(n):
-            if arr[i]>largest:
-                largest = arr[i]
-                
+        n = len(nums)
+        for i in range(1,n-1):
+            if nums[i]>largest:
+                largest = nums[i]
         return largest
 sol = Solution()
 print(sol.largestElement([3,5,7,1,2]))
