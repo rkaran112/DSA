@@ -4,25 +4,23 @@ element = 5
 arr.append(None)
 n = len(arr)
 #insertion 
-
-# at beggining 
-# for i in range(n-1,-1,-1):
-#      arr[i+1]= arr[i]
-# arr[0] = element
-# print(arr)
+#At beggining 
+for i in range(n-1,-1,-1):
+     arr[i+1]= arr[i]
+arr[0] = element
+print(arr)
 
 # #middle 
-# pos = 2
-# for i in range(n-1,pos-1,-1):
-#     arr[i] = arr[i-1]
-# arr[pos-1] = element
-# print(arr)
+pos = 2
+for i in range(n-1,pos-1,-1):
+    arr[i] = arr[i-1]
+arr[pos-1] = element
+print(arr)
 
-# arr[n] =element
-
-# #end
-# for i in range(n+1):
-#     print(arr)
+#end
+arr[n] =element
+for i in range(n+1):
+    print(arr)
 
 ## Deletion
 
@@ -41,7 +39,7 @@ for i in range(pos,n):
 #insertion - begining - arr[i] = arr[i-1] -> arr[0]  =ele,middle -arr[i]=arr[i-1] (for i in range(n-1,pos-1,-1))->arr[pos] - ele,last arr[n] = eke
 #deletion - begining arr[i-1] = arr[i], middle -for(i in range(pos+1,-1))arr[i-1] = arr[i],Last arr[n]  = None
 
-
+ele=3
 #first occurance-
 for i in range(0,n):
     if  arr[i]==ele:
@@ -58,4 +56,3 @@ while i<n:
         
         n=n-1
         arr[n] = None 
-        
