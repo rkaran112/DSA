@@ -33,7 +33,7 @@ Work in progress — this is an active practice/learning repo, not a finished li
 - `slidingWindow.py` contains only notes, no working code yet
 - `array/tempCodeRunnerFile.py` is a stray auto-generated file (`nums[i-1] =`, incomplete) and isn't real content
 - Several methods are incomplete or buggy as currently written, e.g.:
-  - `neetcode_array.py`: `largestSecondLargest2` never returns a value; `largestElement` skips the last index of the array (`range(1, n-1)`)
+  - `neetcode_array.py`: `largestSecondLargest2` never returns a value
   - `sortingArray.py`: `insertionSort` doesn't implement a correct insertion sort (it just tracks a running maximum)
   - `String_basic.py`: `subString` never returns anything; `isAnagram` has faulty comparison logic (`catch == t[i]`) and returns early on the first iteration
 - No automated tests or error handling; scripts are meant to be run and read manually
