@@ -44,13 +44,12 @@ class Basics:
             return False
         catch ={}
         for i in s:
-            catch[i] = catch.get(i,0)
+            catch[i] = catch.get(i,0)+1
         for i in t:
-            if catch==t[i]:
-                catch[i] -=1
-            if catch[i]<0:
+            if catch.get(i,0)<=0:
                 return False
-            return True
+            catch[i] -=1
+        return True
     
     
 bas = Basics()

@@ -35,7 +35,7 @@ Work in progress — this is an active practice/learning repo, not a finished li
 - Several methods are incomplete or buggy as currently written, e.g.:
   - `neetcode_array.py`: `largestSecondLargest2` never returns a value
   - `sortingArray.py`: `insertionSort` doesn't implement a correct insertion sort (it just tracks a running maximum)
-  - `String_basic.py`: `subString` never returns anything; `isAnagram` has faulty comparison logic (`catch == t[i]`) and returns early on the first iteration
+  - `String_basic.py`: `subString` never returns anything
 - No automated tests or error handling; scripts are meant to be run and read manually
 
 If you're browsing this for reference, treat it as in-progress scratch work rather than production-quality solutions.
