@@ -20,10 +20,9 @@ class Basics:
                 if s[i+j]!=substr[j]:
                     match = False
                     break
-                if match:
-                    True
-    # def palindrome(self,s,substr)->bool:
-    #     break
+            if match:
+                return True
+        return False
     def palinDrome(self,s: str)->bool:
         s = s.lower()
         clean = ""
