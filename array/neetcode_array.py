@@ -39,7 +39,8 @@ class Solution:
                 largest = num
             elif num >second and largest>num:
                 second = num
-                
+        return largest, second
+
     def arrayRotaion(self,nums:list[int])->list[int]:
         n = len(nums)
         first = nums[n-1]
