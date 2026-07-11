@@ -5,12 +5,11 @@ class Basics:
             cnt+=1
         return cnt
 
-    def searchCharIndex(self,s,target,goal)->int:
-        seen = set()
+    def searchCharIndex(self,s,target)->int:
         for i in range(len(s)):
             if s[i] == target:
-                seen.add(i)
-        return seen
+                return i
+        return -1
     def subString(self,s,substr)->bool:
         n = len(s)
         m = len(substr)
