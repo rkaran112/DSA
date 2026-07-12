@@ -26,7 +26,7 @@ class Solution:
             for j in range(n-i-1):
                 if nums[j+1]>nums[j]:
                     nums[j],nums[j+1]= nums[j+1],nums[j]
-        return(nums[n-1],nums[n-2])
+        return(nums[0],nums[1])
 
     # def removeDuplicates(self,nums: List[int])->int:
     def largestSecondLargest2(self,nums:list[int])->int:
