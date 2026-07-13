@@ -6,10 +6,22 @@ count =0
 
 class Algorithm:
     def twoPointer(self,nums:list[int])->int:
-        # largest and second largest number
+        # largest and second largest number, scanning from both ends inward
         largest = float("-inf")
         second  = float("-inf")
-            
+        left, right = 0, len(nums)-1
+        while left <= right:
+            candidates = (nums[left],) if left == right else (nums[left], nums[right])
+            for num in candidates:
+                if num>largest:
+                    second = largest
+                    largest = num
+                elif num>second and largest>num:
+                    second = num
+            left +=1
+            right -=1
+        return largest, second
+
 class Solution:
     def hasDuplicate(self, nums: list[int]) -> bool:
         seen = set()
@@ -59,3 +71,6 @@ class Solution:
 sol = Solution()
 print(sol.largestElement([3,5,7,1,2]))
 # print(sol.arrayRotaion([3,4,5,1,2]))
+
+algo = Algorithm()
+print(algo.twoPointer([3,5,7,1,2]))
