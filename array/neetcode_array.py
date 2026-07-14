@@ -55,10 +55,10 @@ class Solution:
 
     def arrayRotaion(self,nums:list[int])->list[int]:
         n = len(nums)
-        first = nums[n-1]
-        for i in range(n-1):
-            nums[i] = nums[i+1] 
-        nums[0] = first
+        last = nums[n-1]
+        for i in range(n-1,0,-1):
+            nums[i] = nums[i-1]
+        nums[0] = last
         return nums
 
     def largestElement(self,nums):
