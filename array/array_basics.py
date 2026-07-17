@@ -25,7 +25,7 @@ for i in range(n+1):
 ## Deletion
 
 #begining
-for i in range(n):
+for i in range(1,n):
     arr[i-1] = arr[i]
 print(arr)
 
