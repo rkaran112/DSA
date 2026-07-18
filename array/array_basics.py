@@ -5,8 +5,8 @@ arr.append(None)
 n = len(arr)
 #insertion 
 #At beggining 
-for i in range(n-1,-1,-1):
-     arr[i+1]= arr[i]
+for i in range(n-1,0,-1):
+    arr[i]= arr[i-1]
 arr[0] = element
 print(arr)
 
