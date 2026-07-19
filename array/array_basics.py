@@ -18,9 +18,8 @@ arr[pos-1] = element
 print(arr)
 
 #end
-arr[n] =element
-for i in range(n+1):
-    print(arr)
+arr[n-1] =element
+print(arr)
 
 ## Deletion
 
