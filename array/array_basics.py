@@ -47,11 +47,13 @@ for i in range(0,n):
             
         arr[i-1] = None
         break
-i= 0  
+i= 0
 while i<n:
     if  arr[i]==ele:
         for j in range(i+1,n):
             arr[j-1] = arr[j]
-        
+
         n=n-1
-        arr[n] = None 
+        arr[n] = None
+        break
+    i += 1
