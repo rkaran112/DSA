@@ -44,8 +44,8 @@ for i in range(0,n):
     if  arr[i]==ele:
         for j in range(i+1,n):
             arr[j-1] = arr[j]
-            
-        arr[i-1] = None
+
+        arr[n-1] = None
         break
 i= 0
 while i<n:
